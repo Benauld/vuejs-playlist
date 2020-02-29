@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<link>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>VueJS Tutorials</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href='styles.css' rel='stylesheet'></link>
+	</head>
+	<body>
+    <div id="app">
+      <h1>Data Binding</h1>
+      <a v-bind:href="website">The Net Ninja</a>
+      <input type="text" v-bind:value="name"></input>
+      <p v-html="websiteTag"></p>
+      <p>My age is {{age}}</p>
+      <button v-on:click="add(1)">Add a year</button>
+      <button v-on:click="subtract(1)">Sub a year</button>
+      <button v-on:dblclick="add(10)">Add 10 years</button>
+      <button v-on:dblclick="subtract(10)">Sub 10 years</button>
+      <div id='canvas' v-on:mousemove="mouseMove">{{x}},{{y}}</div>
+    </div>
+
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
